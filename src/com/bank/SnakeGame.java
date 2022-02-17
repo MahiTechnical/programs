@@ -192,11 +192,11 @@ public class SnakeGame {
  * Let WW represent the width of the grid and HH represent the height of the grid. Also, let NN represent the number of food items in the list.
  *
  * Time Complexity:
- * The time complexity of the move function is \mathcal{O}(1)O(1).
+ * The time complexity of the move function is O(1).
  * The time taken to calculate bites_itself is constant since we are using a dictionary to search for the element.
  * The time taken to add and remove an element from the queue is also constant.
  * Space Complexity:
- * The space complexity is \mathcal{O}(W \times H + N)O(W×H+N)
- * \mathcal{O}(N)O(N) is used by the food data structure.
- * \mathcal{O}(W \times H)O(W×H) is used by the snake and the snake_set data structures. At most, we can have snake that occupies all the cells of the grid as explained in the beginning of the article.
+ * The space complexity is O(W×H+N)
+ * O(N) is used by the food data structure.
+ * O(W×H) is used by the snake and the snake_set data structures. At most, we can have snake that occupies all the cells of the grid as explained in the beginning of the article.
  */
