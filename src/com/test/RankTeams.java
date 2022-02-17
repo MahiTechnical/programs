@@ -12,7 +12,8 @@ public class RankTeams {
      * Iterate the input to fill ranking[i][j], which is the number of votes for team j to be i-th rank
      * Use this ranking matrix to sort allCandidates
      *
-     *
+     *The time complexity: O(26 + n * c + 26 * log 26 * c + c) = O(n).
+     * c is a constant number, and c <= 26.
      *
      * 1 <= votes.length <= 1000
      * 1 <= votes[i].length <= 26
@@ -47,6 +48,13 @@ public class RankTeams {
                 ranking[v.charAt(i) - 'A'][i]++;
             }
         }
+
+        /**
+         * nternally the Sort method does call Compare method of the classes it is sorting. To compare two elements,
+         * it asks “Which is greater?” Compare method returns
+         * -1, 0, or 1 to say if it is less than, equal, or greater to the other.
+         * It uses this result to then determine if they should be swapped for their sort.
+         */
         Arrays.sort(ranking, (a, b) -> {
             for (int i = 0; i < totalRanks; i++) {
                 if (a[i] < b[i]) return 1;

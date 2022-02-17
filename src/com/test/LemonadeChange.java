@@ -16,7 +16,7 @@ public class LemonadeChange {
     public static void main(String[] args) {
         LemonadeChange lemonadeChange = new LemonadeChange();
 
-        int bills [] = new int[]{5,5,5,10,20,10,10};
+        int[] bills = new int[]{5,5,5,10,20,10,10};
         //assertTrue(lemonadeChange.evaluate(bills));
 
         System.out.println((lemonadeChange.evaluate(bills)));

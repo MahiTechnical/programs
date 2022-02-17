@@ -21,7 +21,7 @@ public class RateLimiterAPI {
      **/
 
 
-    private int THERSOLd = 10;
+    private final int THERSOLd = 10;
     HashMap<Integer, Integer> rateLimiterMap = new HashMap<>();
 
     public static void main(String[] args) {
